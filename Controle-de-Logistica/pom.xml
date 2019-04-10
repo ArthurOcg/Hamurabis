@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com.unifacisa.arquitetura.prova1</groupId>
-	<artifactId>Controle_de_Cliente</artifactId>
+	<artifactId>Controle de Logistica</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Controle de Cliente</name>
+	<name>Controle-de-Logistica</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
