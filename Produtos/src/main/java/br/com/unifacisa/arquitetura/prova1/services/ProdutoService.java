@@ -1,13 +1,14 @@
 package br.com.unifacisa.arquitetura.prova1.services;
 
 import java.util.List;
-import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import br.com.unifacisa.arquitetura.prova1.entidades.Produto;
 import br.com.unifacisa.arquitetura.prova1.repository.ProdutoRepository;
 
+@Service
 public class ProdutoService {
 
 	@Autowired
@@ -21,8 +22,8 @@ public class ProdutoService {
 		}
 	}
 	
-	public Optional<Produto> consultarPorId(Long id) {
-		return produtoRepository.findById(id); 	
+	public Produto consultarPorId(Long id) {
+		return produtoRepository.findById(id).orElse(null); 	
 	}
 	
 	public List<Produto> consultar(){
