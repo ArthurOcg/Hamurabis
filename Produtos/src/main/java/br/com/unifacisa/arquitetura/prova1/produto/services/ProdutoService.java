@@ -6,13 +6,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import br.com.unifacisa.arquitetura.prova1.produto.entidades.Produto;
-import br.com.unifacisa.arquitetura.prova1.produto.repository.ClienteRepository;
+import br.com.unifacisa.arquitetura.prova1.produto.repository.ProdutoRepository;
 
 @Service
 public class ProdutoService {
 
 	@Autowired
-	private ClienteRepository produtoRepository;
+	private ProdutoRepository produtoRepository;
 	
 	public Produto cadastrar(Produto produto)throws Exception {
 		try {
