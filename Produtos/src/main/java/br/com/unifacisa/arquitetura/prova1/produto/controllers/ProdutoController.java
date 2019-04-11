@@ -44,8 +44,14 @@ public class ProdutoController {
 		return new ResponseEntity<Produto>(HttpStatus.INTERNAL_SERVER_ERROR);
 	}
 	
-	@DeleteMapping()
-	public ResponseEntity<Produto> remover(@RequestBody Produto produto){
-		return new ResponseEntity<Produto>(HttpStatus.OK);
+	@DeleteMapping("/{id}")
+	public ResponseEntity<Produto> remover(@PathVariable Long id){
+		try {
+			produtoService.remove(id);
+			return new ResponseEntity<Produto>(HttpStatus.OK);
+		} catch (Exception e) {			
+			e.printStackTrace();
+		}
+		return new ResponseEntity<Produto>(HttpStatus.INTERNAL_SERVER_ERROR);
 	}
 }
