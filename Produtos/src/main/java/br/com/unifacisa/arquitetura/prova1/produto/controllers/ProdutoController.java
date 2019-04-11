@@ -1,4 +1,4 @@
-package br.com.unifacisa.arquitetura.prova1.controllers;
+package br.com.unifacisa.arquitetura.prova1.produto.controllers;
 
 import java.util.List;
 
@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.unifacisa.arquitetura.prova1.entidades.Produto;
-import br.com.unifacisa.arquitetura.prova1.services.ProdutoService;
+import br.com.unifacisa.arquitetura.prova1.produto.entidades.Produto;
+import br.com.unifacisa.arquitetura.prova1.produto.services.ProdutoService;
 
 @RestController
 @RequestMapping("produtos")

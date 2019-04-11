@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com.unifacisa.arquitetura.prova1</groupId>
-	<artifactId>Controle_de_Autor</artifactId>
+	<artifactId>Controle-de-Autor</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Controle-de-Autor</name>
 	<description>Demo project for Spring Boot</description>

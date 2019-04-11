@@ -1,4 +1,4 @@
-package br.com.unifacisa.arquitetura.prova1.entidades;
+package br.com.unifacisa.arquitetura.prova1.cliente.entidades;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
