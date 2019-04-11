@@ -30,8 +30,8 @@ public class ClienteService {
 		return (List<Cliente>) clienteRepository.findAll();
 	}
 	
-	public void remove(Cliente cliente) {
-		clienteRepository.delete(cliente);
+	public void remove(Long id) {
+		clienteRepository.deleteById(id);
 	}
 	
 }

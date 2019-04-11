@@ -18,7 +18,7 @@ import br.com.unifacisa.arquitetura.prova1.autor.services.AutorService;
 
 
 @RestController
-@RequestMapping("autores")
+@RequestMapping("/autores")
 public class AutorController {
 
 	@Autowired

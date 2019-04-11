@@ -17,7 +17,7 @@ import br.com.unifacisa.arquitetura.prova1.cliente.entidades.Cliente;
 import br.com.unifacisa.arquitetura.prova1.cliente.services.ClienteService;
 
 @RestController
-@RequestMapping("clientes")
+@RequestMapping("/clientes")
 public class ClienteController {
 
 	@Autowired
@@ -44,8 +44,15 @@ public class ClienteController {
 		return new ResponseEntity<Cliente>(HttpStatus.INTERNAL_SERVER_ERROR);
 	}
 	
-	@DeleteMapping()
-	public ResponseEntity<Cliente> remover(@RequestBody Cliente produto){
-		return new ResponseEntity<Cliente>(HttpStatus.OK);
+	@DeleteMapping("/{id}")
+	public ResponseEntity<Cliente> remover(@PathVariable Long id){
+		try {
+			clienteService.remove(id);
+			return new ResponseEntity<Cliente>(HttpStatus.OK);
+		} catch (Exception e) {
+			
+			e.printStackTrace();
+		}
+		return new ResponseEntity<Cliente>(HttpStatus.INTERNAL_SERVER_ERROR);
 	}
 }

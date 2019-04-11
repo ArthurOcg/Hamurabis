@@ -17,7 +17,7 @@ import br.com.unifacisa.arquitetura.prova1.produto.entidades.Produto;
 import br.com.unifacisa.arquitetura.prova1.produto.services.ProdutoService;
 
 @RestController
-@RequestMapping("produtos")
+@RequestMapping("/produtos")
 public class ProdutoController {
 
 	@Autowired
