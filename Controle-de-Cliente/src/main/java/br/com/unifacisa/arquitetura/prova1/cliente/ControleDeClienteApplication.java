@@ -1,4 +1,4 @@
-package br.com.unifacisa.arquitetura.prova1.Produtos;
+package br.com.unifacisa.arquitetura.prova1.cliente;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,10 +6,10 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication
 @EnableEurekaClient
-public class ProdutosApplication {
+public class ControleDeClienteApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ProdutosApplication.class, args);
+		SpringApplication.run(ControleDeClienteApplication.class, args);
 	}
 
 }
