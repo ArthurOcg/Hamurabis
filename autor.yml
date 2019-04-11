@@ -17,7 +17,7 @@ spring:
    datasource:
       url: jdbc:h2:file:~/teste
       username: sa
-      password:
+      password: admin
       driver-class-name: org.h2.Driver
    jpa: 
       show-sql: true
