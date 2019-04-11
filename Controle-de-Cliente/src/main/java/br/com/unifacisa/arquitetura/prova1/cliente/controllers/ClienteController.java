@@ -33,7 +33,7 @@ public class ClienteController {
 		return new ResponseEntity<Cliente>(clienteService.consultarPorId(id), HttpStatus.OK);
 	}
 	
-	@PostMapping("/cadastrar")
+	@PostMapping
 	public ResponseEntity<Cliente> cadastrar(@RequestBody Cliente produto){
 		try {
 			return new ResponseEntity<Cliente>(clienteService.cadastrar(produto), HttpStatus.CREATED);
